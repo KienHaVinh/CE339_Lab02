@@ -1,0 +1,18 @@
+#ifndef __AHT20_H__
+#define __AHT20_H__
+
+#include <Arduino.h>
+#include <Wire.h>
+
+class AHT20{
+    
+private:
+
+    bool startSensor();
+public:
+
+    void begin();
+    bool getSensor(float *h, float *t);
+};
+
+#endif
